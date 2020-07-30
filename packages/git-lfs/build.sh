@@ -1,15 +1,12 @@
 TERMUX_PKG_HOMEPAGE=https://git-lfs.github.com/
 TERMUX_PKG_DESCRIPTION="Git extension for versioning large files"
 TERMUX_PKG_LICENSE="MIT"
-TERMUX_PKG_MAINTAINER="Leonid Plyushch <leonid.plyushch@gmail.com>"
-TERMUX_PKG_VERSION=2.8.0
+TERMUX_PKG_VERSION=2.11.0
 TERMUX_PKG_REVISION=1
 TERMUX_PKG_SRCURL=https://github.com/git-lfs/git-lfs/archive/v$TERMUX_PKG_VERSION.tar.gz
-TERMUX_PKG_SHA256=10b476bb8862ebceddc6f0a55f5fb63e2c1e5bed6554f6e3b207dd0155a196ad
+TERMUX_PKG_SHA256=8183c4cbef8cf9c2e86b0c0a9822451e2df272f89ceb357c498bfdf0ff1b36c7
 
 termux_step_make() {
-	echo 'replace github.com/git-lfs/go-ntlm v0.0.0-20190307203151-c5056e7fa066 => github.com/git-lfs/go-ntlm c5056e7fa066' >> $TERMUX_PKG_SRCDIR/go.mod
-
 	termux_setup_golang
 	export GOPATH=$TERMUX_PKG_BUILDDIR
 

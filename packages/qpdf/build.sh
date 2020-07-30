@@ -1,11 +1,9 @@
 TERMUX_PKG_HOMEPAGE=http://qpdf.sourceforge.net
 TERMUX_PKG_DESCRIPTION="Content-Preserving PDF Transformation System"
 TERMUX_PKG_LICENSE="Apache-2.0"
-TERMUX_PKG_MAINTAINER="Vishal Biswas @vishalbiswas"
-TERMUX_PKG_VERSION=8.4.2
-TERMUX_PKG_REVISION=3
-TERMUX_PKG_SRCURL=https://github.com/qpdf/qpdf/archive/release-qpdf-$TERMUX_PKG_VERSION.tar.gz
-TERMUX_PKG_SHA256=741a171295e561eadf0285ae6b0b821632f9773b8db0daa95df4dc565bf566bb
+TERMUX_PKG_VERSION=10.0.1
+TERMUX_PKG_SRCURL=https://github.com/qpdf/qpdf/releases/download/release-qpdf-$TERMUX_PKG_VERSION/qpdf-$TERMUX_PKG_VERSION.tar.gz
+TERMUX_PKG_SHA256=5d2277c738188b7f4e3f01a6db7f2937ed6df54671f1fba834cd3d7ff865827b
 TERMUX_PKG_DEPENDS="libc++, libjpeg-turbo, zlib"
 TERMUX_PKG_BREAKS="qpdf-dev"
 TERMUX_PKG_REPLACES="qpdf-dev"
